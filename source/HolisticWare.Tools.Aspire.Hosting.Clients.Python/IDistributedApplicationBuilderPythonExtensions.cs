@@ -49,9 +49,24 @@ public static partial class
                                                                                     working_directory,
                                                                                     python_script_and_args
                                                                                 );
-            
-
+        
         return resource_builder;
+    }
+
+    public static
+        IResourceBuilder<ExecutableResource>
+                                        GenerateSettings
+                                        (
+                                            this  IResourceBuilder<ExecutableResource>? builder
+                                        )
+    {
+        IEnumerable<EndpointAnnotation> endpoints = default;
+        IEnumerable<EnvironmentCallbackAnnotation> envvars = default;
+        
+        bool endpoints_exist = builder.Resource.TryGetEndpoints(out endpoints);
+        bool envvars_exist = builder.Resource.TryGetEnvironmentVariables(out envvars);
+
+        return builder;
     }
 
     public static

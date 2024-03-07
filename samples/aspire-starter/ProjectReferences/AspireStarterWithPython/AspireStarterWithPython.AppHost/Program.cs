@@ -18,7 +18,9 @@ builder.AddScriptPython
                 "../Clients/Python/",
                 new string[] { "test1.py" }
             )
-        .WithReference(apiService);
+            .WithReference(apiService)
+            .GenerateSettings()
+            ;
 
 builder
     .Build()

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\source\HolisticWare.Tools.Aspire.Hosting.Clients.Python\HolisticWare.Tools.Aspire.Hosting.Clients.Python.csproj">
+    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Tools.Aspire.Hosting.Clients.Python\HolisticWare.Tools.Aspire.Hosting.Clients.Python.csproj">
       <IsAspireProjectResource>false</IsAspireProjectResource>
     </ProjectReference>
                       
