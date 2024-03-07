@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 17.8.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireStarterWithPython.AppHost", "AspireStarterWithPython.AppHost\AspireStarterWithPython.AppHost.csproj", "{69C3A442-8529-484E-91F5-60C7FBAE9F00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireStarterWithPython.ServiceDefaults", "AspireStarterWithPython.ServiceDefaults\AspireStarterWithPython.ServiceDefaults.csproj", "{DF5C4F3E-F6FB-45D2-853A-3079CF4F60B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireStarterWithPython.ApiService", "AspireStarterWithPython.ApiService\AspireStarterWithPython.ApiService.csproj", "{7FCC2D66-3A6E-4B44-8F8E-C7986483C10B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireStarterWithPython.Web", "AspireStarterWithPython.Web\AspireStarterWithPython.Web.csproj", "{A1638344-DB16-4886-92AF-47273288111E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Tools.Aspire.Hosting.Clients.Python", "..\..\..\source\HolisticWare.Tools.Aspire.Hosting.Clients.Python\HolisticWare.Tools.Aspire.Hosting.Clients.Python.csproj", "{F21775F4-0A78-42C5-B358-A6FEC748D81C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C3A442-8529-484E-91F5-60C7FBAE9F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C3A442-8529-484E-91F5-60C7FBAE9F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C3A442-8529-484E-91F5-60C7FBAE9F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C3A442-8529-484E-91F5-60C7FBAE9F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5C4F3E-F6FB-45D2-853A-3079CF4F60B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5C4F3E-F6FB-45D2-853A-3079CF4F60B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5C4F3E-F6FB-45D2-853A-3079CF4F60B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5C4F3E-F6FB-45D2-853A-3079CF4F60B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FCC2D66-3A6E-4B44-8F8E-C7986483C10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCC2D66-3A6E-4B44-8F8E-C7986483C10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCC2D66-3A6E-4B44-8F8E-C7986483C10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCC2D66-3A6E-4B44-8F8E-C7986483C10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1638344-DB16-4886-92AF-47273288111E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1638344-DB16-4886-92AF-47273288111E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1638344-DB16-4886-92AF-47273288111E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1638344-DB16-4886-92AF-47273288111E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21775F4-0A78-42C5-B358-A6FEC748D81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21775F4-0A78-42C5-B358-A6FEC748D81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21775F4-0A78-42C5-B358-A6FEC748D81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21775F4-0A78-42C5-B358-A6FEC748D81C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {327ED590-416E-4BC0-A88A-78C14720183B}
+	EndGlobalSection
+EndGlobal
