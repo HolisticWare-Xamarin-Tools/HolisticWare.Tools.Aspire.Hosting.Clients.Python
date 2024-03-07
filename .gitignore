@@ -3,6 +3,27 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+## HolisticWare/Xamarin/Microsoft
+output/
+
+## HolisticWare
+**/*-packages/
+
+## MacOSX
+**/.DS_Store
+
+# IDEs - Visual Studio
+**/.vs
+
+# IDEs - Rider
+**/.idea
+
+# Visual Studio Code Extensions
+**/.metor
+
+# Cake
+tools/
+
 # User-specific files
 *.rsuser
 *.suo
