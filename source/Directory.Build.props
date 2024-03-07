@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+       <!-- 
+           Semantic Version - nice to have
+           x.y.z
+       -->
+      <VersionCompoundMain>0.0.1</VersionCompoundMain>
+      <VersionCompoundSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmmss'))</VersionCompoundSuffix>
+      <PackageOutputPath>../../output</PackageOutputPath>
+   </PropertyGroup>
+      
+</Project>
