@@ -39,7 +39,8 @@ public static partial class
                                             string name,
                                             string path_python,
                                             string working_directory,
-                                            string[] python_script_and_args
+                                            string[] python_script_and_args,
+                                            string aspire_settings = "aspire_settings.py"
                                         )
     {
         IResourceBuilder<ExecutableResource>? resource_builder = builder?.AddExecutable
@@ -78,11 +79,25 @@ public static partial class
     {
         string code = 
         """
-        public partial class __Class__
-        {
-        }
+        import urllib.request
+        contents = urllib.request.urlopen("https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json").read()
+        # contents = urllib.request.urlopen("https://apiservice").read()
+        
+        print(contents)
+        
+        # $HOME/moljac-python/venv/bin/pip3 install requests
+        
+        import requests
+        r = requests.get("https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json")
+        # r = requests.get("https://apiservice")
+        
+        print(r.status_code)
+        print(r.headers)
+        print(r.content)  # bytes
+        print(r.text)     # r.content as str
         """;
 
+        System.IO.File.WriteAllText("aspire_settings.py", code);
         return builder;
     }
     
