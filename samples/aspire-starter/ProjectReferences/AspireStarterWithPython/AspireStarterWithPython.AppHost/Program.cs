@@ -38,7 +38,7 @@ builder.AddScriptPythonDjango
         new string[] { "manage.py", "runserver" }
     )
     .WithReference(apiService)
-    .WithServiceBinding(hostPort: 8000, scheme: "http", env: "PORT");
+    //.WithServiceBinding(hostPort: 8000, scheme: "http", env: "PORT");
     //.WithEnvironment("CLEINT_ENV_CONFIG_VAR_apiservice", "apiservice");
     // Dashboard??
     //.WithAnnotation(new EndpointAnnotation(ProtocolType.Tcp, uriScheme: "http", name: "django", port: 8000))
