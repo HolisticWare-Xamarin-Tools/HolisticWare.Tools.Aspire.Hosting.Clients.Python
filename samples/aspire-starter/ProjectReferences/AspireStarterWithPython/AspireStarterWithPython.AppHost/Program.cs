@@ -13,14 +13,36 @@ builder.AddProject<Projects.AspireStarterWithPython_Web>("webfrontend")
 // brew install matplotlib
 builder.AddScriptPython
             (
-                "client_python",
+                "clients-python-machine-learning",
                 $"{Environment.GetEnvironmentVariable("HOME")}/moljac-python/venv/bin/python3",
-                "../Clients/Python/",
-                new string[] { "test1.py" }
+                "../Clients/Python/simple-machine-learning/",
+                new string[] { "test1.py"}
             )
             .WithReference(apiService)
             .GenerateSettings()
             ;
+
+builder.AddScriptPython
+    (
+        "clients-python-django-manage",
+        $"{Environment.GetEnvironmentVariable("HOME")}/moljac-python/venv/bin/python3",
+        "../Clients/Python/django/AspireTest/",
+        new string[] { "manage.py", "runserver" }
+    )
+    .WithReference(apiService)
+    .GenerateSettings()
+    ;
+
+builder.AddScriptPython
+    (
+        "clients-python-django-web-frontent",
+        $"{Environment.GetEnvironmentVariable("HOME")}/moljac-python/venv/bin/python3",
+        "../Clients/Python/django/AspireTest/",
+        new string[] { "manage.py", "runserver" }
+    )
+    .WithReference(apiService)
+    .GenerateSettings()
+    ;
 
 builder
     .Build()
