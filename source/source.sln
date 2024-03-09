@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolisticWare.Tools.Aspire.Hosting.Clients.Maui", "HolisticWare.Tools.Aspire.Hosting.Clients.Maui\HolisticWare.Tools.Aspire.Hosting.Clients.Maui.csproj", "{F0F50BA4-E159-424A-BC94-3308391C42E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Tools.Aspire.Hosting.Clients.Python", "HolisticWare.Tools.Aspire.Hosting.Clients.Python\HolisticWare.Tools.Aspire.Hosting.Clients.Python.csproj", "{38514C12-7140-43A5-97E5-78BB40F21199}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F0F50BA4-E159-424A-BC94-3308391C42E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0F50BA4-E159-424A-BC94-3308391C42E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0F50BA4-E159-424A-BC94-3308391C42E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0F50BA4-E159-424A-BC94-3308391C42E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38514C12-7140-43A5-97E5-78BB40F21199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38514C12-7140-43A5-97E5-78BB40F21199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38514C12-7140-43A5-97E5-78BB40F21199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38514C12-7140-43A5-97E5-78BB40F21199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
