@@ -15,7 +15,9 @@ builder.AddScriptPython
                 "clients-python-machine-learning",
                 $"{Environment.GetEnvironmentVariable("HOME")}/moljac-python/venv/bin/python3",
                 "../Clients/Python/simple-machine-learning/",
-                new string[] { "test1.py"}
+                new string[] { "test1.py"},
+                "localhost",
+                7777
             )
             .WithReference(apiService)
             .GenerateSettings()
@@ -24,6 +26,7 @@ builder.AddScriptPython
 IEnumerable<EndpointAnnotation>? endpoints;
 bool endpoints_exist = apiService.Resource.TryGetEndpoints(out endpoints);
 
+/*
 builder.AddScriptPythonDjango
             (
                 "webapp-python-django-web-frontent",
@@ -54,6 +57,7 @@ builder.AddScriptPythonFlask
             //.WithAnnotation(new EndpointAnnotation(ProtocolType.Tcp, uriScheme: "http", name: "django", port: 8000))
             //.GenerateSettings() // testing 
             ;
+*/
 
 builder
     .Build()
